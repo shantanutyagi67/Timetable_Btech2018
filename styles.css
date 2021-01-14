@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   font-family: "Karla";
-  color: #546E7A;
+  color: #000000;
 }
 
 * {
@@ -14,7 +14,7 @@ html, body {
   grid-template-columns: 120px;
   grid-template-rows: 60px;
   width: 100vw;
-  height: 100vh;
+  height: 100vh;	
 }
 .timetable .accent-pink-gradient {
   display: flex;
