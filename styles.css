@@ -13,7 +13,7 @@ html, body {
   grid-template-areas: ". week" "time content";
   grid-template-columns: 120px;
   grid-template-rows: 60px;
-  width: 100vw;
+  width: 100hw;
   height: 50vw;
   font-size:1vw  
 }
@@ -101,7 +101,7 @@ html, body {
 .timetable .week-names {
   grid-area: week;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   text-transform: uppercase;
   font-size: 12pxvw;
 }
@@ -123,16 +123,23 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 100%vw;
+  height: 100%vw;
   box-shadow: inset 0 1px 0 0 #ECEFF1;
 }
 .timetable .content {
   grid-area: content;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .timetable .content > div {
   box-shadow: inset 1px 0 0 #ECEFF1, inset 0 1px 0 0 #ECEFF1;
+}
+.views{
+  width: 100%vw;
+  height: 100%vw;
+  font-size: 10pxvw;
+  align-items: center;
+  justify-content: center;
 }
