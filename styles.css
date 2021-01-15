@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   font-family: "Karla";
   color: #000000;
+  font-size:1vw
 }
 
 * {
@@ -14,7 +15,7 @@ html, body {
   grid-template-columns: 120px;
   grid-template-rows: 60px;
   width: 100vw;
-  height: 100vh;	
+  height: 50vw;	
 }
 .timetable .accent-pink-gradient {
   display: flex;
@@ -102,7 +103,7 @@ html, body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 12pxvw;
 }
 .timetable .week-names > div {
   display: flex;
@@ -116,7 +117,7 @@ html, body {
   grid-area: time;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
-  font-size: 14px;
+  font-size: 14pxvw;
 }
 .timetable .time-interval > div {
   display: flex;
