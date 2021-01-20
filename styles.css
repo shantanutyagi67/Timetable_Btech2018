@@ -17,10 +17,23 @@ html, body {
   height: 50vw;
   font-size:1vw  
 }
+.timetable .empty-box {
+  display: block;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
+}
 .timetable .accent-pink-gradient {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
+  justify-content: center;
+  align-content: center;
   background: linear-gradient(135deg, #ee8ebc, #eea08e);
   transition: 0.2s ease box-shadow, 0.2s ease transform;
 }
@@ -30,8 +43,11 @@ html, body {
 }
 .timetable .accent-orange-gradient {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
   background: linear-gradient(135deg, #eec08e, #dcee8e);
   transition: 0.2s ease box-shadow, 0.2s ease transform;
 }
@@ -41,8 +57,11 @@ html, body {
 }
 .timetable .accent-green-gradient {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
   background: linear-gradient(135deg, #bcee8e, #8eeea0);
   transition: 0.2s ease box-shadow, 0.2s ease transform;
 }
@@ -52,8 +71,11 @@ html, body {
 }
 .timetable .accent-cyan-gradient {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
   background: linear-gradient(135deg, #8eeec0, #8edcee);
   transition: 0.2s ease box-shadow, 0.2s ease transform;
 }
@@ -63,8 +85,11 @@ html, body {
 }
 .timetable .accent-blue-gradient {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
   background: linear-gradient(135deg, #8ebcee, #a08eee);
   transition: 0.2s ease box-shadow, 0.2s ease transform;
 }
@@ -74,8 +99,11 @@ html, body {
 }
 .timetable .accent-purple-gradient {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
   background: linear-gradient(135deg, #c08eee, #ee8edc);
   transition: 0.2s ease box-shadow, 0.2s ease transform;
 }
@@ -85,8 +113,11 @@ html, body {
 }
 .timetable .accent-brown-gradient {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 4%;
+  margin: 5%;
   background: linear-gradient(135deg, #f2b87e, #cc9864);
   transition: 0.2s ease box-shadow, 0.2s ease transform;
 }
@@ -109,6 +140,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-left: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
   width: 100%;
   height: 100%;
   box-shadow: inset 1px 0 0 #ECEFF1;
@@ -121,20 +154,22 @@ html, body {
 }
 .timetable .time-interval > div {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%vw;
   height: 100%vw;
-  box-shadow: inset 0 1px 0 0 #ECEFF1;
+  box-shadow: inset 0 0px 0 0 #FFFFFF;
 }
 .timetable .content {
   grid-area: content;
   display: grid;
+  border-bottom: 0px solid #ffffff;
+
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
 }
 .timetable .content > div {
-  box-shadow: inset 1px 0 0 #ECEFF1, inset 0 1px 0 0 #ECEFF1;
+  box-shadow: inset 0 0px 0 0 #FFFFFF;
+  border-left: 2px solid #d3d3d3;
+  border-bottom: 0px solid #ffffff;
 }
 .views{
   width: 100%vw;
